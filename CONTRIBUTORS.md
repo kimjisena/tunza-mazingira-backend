@@ -5,6 +5,6 @@
 3. Patrick Bijampole (pbijampola)
 4. Elia Mkumbo (Era360)
 5. Humphrey Mloka (reie)
-6. Agatha Sasmos (aggie)
+6. Agatha Sasmos (aggie1612)
 7. Jackson Makinda (makindajack)
 8. Rahma Ahlawy (rahma)
