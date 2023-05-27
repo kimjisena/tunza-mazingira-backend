@@ -17,7 +17,6 @@ def print_env():
     print(f'username: {username}')
     print(f'api_key: {api_key}')
 
-
 class SendSMS():
     sms = africastalking.SMS
 
@@ -26,7 +25,7 @@ class SendSMS():
         recipients = ["+255789723254"]
 
         # Set your message
-        message = "Hello, Africa's Talking!"
+        message = "Karibu! Gari la kusafisha mji litawasili kesho. Tuko tayari kudumisha usafi na uzuri wa mji wetu. Asante kwa ushirikiano wako!\n#UsafiWaMji"
 
         # Set your shortCode or senderId
         # sender = "AFRICASTKNG"
