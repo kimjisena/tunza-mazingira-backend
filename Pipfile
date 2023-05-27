@@ -8,6 +8,8 @@ flask = "*"
 python-dotenv = "*"
 watchdog = "*"
 africastalking = "*"
+schedule = "*"
+flask-apscheduler = "*"
 
 [dev-packages]
 
