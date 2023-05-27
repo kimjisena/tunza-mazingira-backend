@@ -14,18 +14,21 @@ app.config.from_object(Config())
 scheduler = APScheduler()
 scheduler.init_app(app)
 
-@scheduler.task('interval', id='send_sms', seconds=2, misfire_grace_time=900)
+@scheduler.task('interval', id='send_sms', seconds=10, misfire_grace_time=900)
 def send_sms():
     # Code to send SMS goes here
     print("Sending SMS...")
-    
-    
     # print env variables
-    print_env()
-    return
+    # print_env()
     # send sms
     SendSMS().sending()
 
+
+@scheduler.scheduled_job('cron', id='send_weekly_sms', week='*', day_of_week='sun')
+def send_weekly_reminder():
+    print('This message will be')
+
+# start the main scheduler
 scheduler.start()
 
 @app.route("/")

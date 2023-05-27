@@ -29,10 +29,10 @@ class SendSMS():
         message = "Hello, Africa's Talking!"
 
         # Set your shortCode or senderId
-        sender = "NEPALS"
+        # sender = "AFRICASTKNG"
 
         try:
-            response = self.sms.send(message, recipients, sender)
+            response = self.sms.send(message, recipients)
             print(response)
             cache_responses[datetime.now().strftime(
                 "%d/%m/%Y")] = sent_number(response["Message"])
