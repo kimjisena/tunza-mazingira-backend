@@ -1,7 +1,8 @@
 from flask import Flask
-from sms import SendSMS, print_env
+from sms import SendSMS, print_env, cache_responses
 
 app = Flask(__name__)
+
 
 @app.route("/")
 def hello_world():
@@ -14,3 +15,8 @@ def hello_world():
         "message": "Hello World",
         "success": True,
     }
+
+
+@app.route("/informations")
+def infos():
+    return cache_responses
