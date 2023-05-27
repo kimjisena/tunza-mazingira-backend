@@ -1,5 +1,5 @@
 from flask import Flask
-from sms import SendSMS, print_env
+from sms import SendSMS, print_env, cache_responses
 from flask_apscheduler import APScheduler
 
 # set configuration values
@@ -34,3 +34,8 @@ def index():
         "message": "Index route",
         "success": True,
     }
+
+
+@app.route("/informations")
+def infos():
+    return cache_responses
