@@ -1,6 +1,9 @@
 import africastalking
 import os
 
+# Initialize cache
+cache_responses = {}
+
 # Initialize Africa's Talking
 username = os.environ.get('AFRICAS_TALKING_USERNAME')
 api_key = os.environ.get('AFRICAS_TALKING_API_KEY')
@@ -27,5 +30,12 @@ class SendSMS():
         try:
             response = self.sms.send(message, recipients, sender)
             print(response)
+            # sample response
+            # {
+            #     SMSMessageData: {
+            #     Message: 'Sent to 1/1 Total Cost: TZS 22.0000',
+            #     Recipients: [ [Object] ] 
+            #     }
+            # }
         except Exception as e:
             print(f'Tenemos una problema: {e}')
