@@ -26,7 +26,7 @@ def send_sms():
 
 @scheduler.scheduled_job('cron', id='send_weekly_sms', week='*', day_of_week='sun')
 def send_weekly_reminder():
-    print('This message will be')
+    print('This a weekly reminder to get rid of your trash...')
 
 # start the main scheduler
 scheduler.start()
