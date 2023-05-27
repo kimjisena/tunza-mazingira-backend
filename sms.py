@@ -22,7 +22,7 @@ class SendSMS():
 
     def sending(self):
         # Set the numbers in international format
-        recipients = ["+255789723254"]
+        recipients = ["+255657142395", "+255745909129"]
 
         # Set your message
         message = "Karibu! Gari la kusafisha mji litawasili kesho. Tuko tayari kudumisha usafi na uzuri wa mji wetu. Asante kwa ushirikiano wako!\n#UsafiWaMji"

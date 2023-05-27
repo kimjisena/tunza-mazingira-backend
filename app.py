@@ -14,7 +14,7 @@ app.config.from_object(Config())
 scheduler = APScheduler()
 scheduler.init_app(app)
 
-@scheduler.task('interval', id='send_sms', seconds=10, misfire_grace_time=900)
+@scheduler.task('interval', id='send_sms', seconds=180, misfire_grace_time=900)
 def send_sms():
     # Code to send SMS goes here
     print("Sending SMS...")
@@ -24,9 +24,9 @@ def send_sms():
     SendSMS().sending()
 
 
-@scheduler.scheduled_job('cron', id='send_weekly_sms', week='*', day_of_week='sun')
-def send_weekly_reminder():
-    print('This a weekly reminder to get rid of your trash...')
+# @scheduler.scheduled_job('cron', id='send_weekly_sms', week='*', day_of_week='sun')
+# def send_weekly_reminder():
+#     print('This a weekly reminder to get rid of your trash...')
 
 # start the main scheduler
 scheduler.start()
