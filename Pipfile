@@ -10,6 +10,7 @@ watchdog = "*"
 africastalking = "*"
 schedule = "*"
 flask-apscheduler = "*"
+importlib-metadata = "*"
 
 [dev-packages]
 

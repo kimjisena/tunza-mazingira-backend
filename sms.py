@@ -4,7 +4,20 @@ import re
 from datetime import datetime
 
 # Initialize cache
-cache_responses = {}
+cache_responses = [
+    {
+        "SMSMessageData": {
+            "Message": 'Sent to 1/2 Total Cost: TZS 22.0000',
+            "Recipients": [["Object"]]
+        }
+    },
+    {
+        "SMSMessageData": {
+            "Message": 'Sent to 4/5 Total Cost: TZS 22.0000',
+            "Recipients": [["Object"]]
+        }
+    }
+]
 
 # Initialize Africa's Talking
 username = os.environ.get('AFRICAS_TALKING_USERNAME')
@@ -16,6 +29,7 @@ africastalking.initialize(username, api_key)
 def print_env():
     print(f'username: {username}')
     print(f'api_key: {api_key}')
+
 
 class SendSMS():
     sms = africastalking.SMS

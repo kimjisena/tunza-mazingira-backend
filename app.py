@@ -3,6 +3,8 @@ from sms import SendSMS, print_env, cache_responses
 from flask_apscheduler import APScheduler
 
 # set configuration values
+
+
 class Config:
     SCHEDULER_API_ENABLED = True
 
@@ -29,7 +31,8 @@ def send_sms():
 #     print('This a weekly reminder to get rid of your trash...')
 
 # start the main scheduler
-scheduler.start()
+# scheduler.start()
+
 
 @app.route("/")
 def index():
