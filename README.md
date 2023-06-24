@@ -1,7 +1,7 @@
 # Tunza Mazingira: Climate Change Awareness SMS Campaign
 
 ## Overview
-The Climate Change Awareness SMS Campaign is a project aimed at raising awareness about climate change and promoting environment conservation through SMS messaging. The project is developed as part of the Africa's Talking Hackathon, with a focus on addressing critical environmental challenges in an accessible and impactful way.
+The Climate Change Awareness SMS Campaign is a project aimed at raising awareness about climate change and promoting environment conservation through SMS messaging. The project is developed as part of the Power Learn Project Hackathon, with a focus on addressing critical environmental challenges in an accessible and impactful way.
 
 ## Objectives
 The primary objectives of the project are as follows:
