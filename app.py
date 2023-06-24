@@ -16,7 +16,7 @@ app.config.from_object(Config())
 scheduler = APScheduler()
 scheduler.init_app(app)
 
-@scheduler.task('interval', id='send_sms', seconds=180, misfire_grace_time=900)
+@scheduler.task('interval', id='send_sms', seconds=30)
 def send_sms():
     # Code to send SMS goes here
     print("Sending SMS...")
@@ -45,3 +45,6 @@ def index():
 @app.route("/informations")
 def infos():
     return cache_responses
+
+
+scheduler.start()
