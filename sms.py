@@ -20,8 +20,8 @@ cache_responses = [
 ]
 
 # Initialize Africa's Talking
-username = os.environ.get('AFRICAS_TALKING_USERNAME')
-api_key = os.environ.get('AFRICAS_TALKING_API_KEY')
+username = 'rahma'
+api_key = 'bb882af712e3beb16bfb749914d0a5c69395704433a5848804b923891536693b'
 
 africastalking.initialize(username, api_key)
 
